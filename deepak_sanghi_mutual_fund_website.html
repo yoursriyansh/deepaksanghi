@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Deepak Sanghi | Mutual Fund Advisor</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,Arial,sans-serif;background:#08111f;color:#fff;overflow-x:hidden}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,92%);margin:auto}.nav{position:fixed;top:0;width:100%;z-index:10;background:rgba(8,17,31,.65);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}.nav .wrap{display:flex;justify-content:space-between;align-items:center;padding:18px 0}.brand{font-weight:800;letter-spacing:.5px}.cta{padding:12px 18px;border-radius:999px;background:linear-gradient(135deg,#d4af37,#f6e08d);color:#08111f;font-weight:700}.hero{min-height:100vh;display:grid;place-items:center;position:relative;background:radial-gradient(circle at 20% 20%,#14345d,transparent 30%),radial-gradient(circle at 80% 20%,#173f33,transparent 30%),#08111f}.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}.badge{display:inline-block;padding:8px 14px;border:1px solid rgba(255,255,255,.12);border-radius:999px;color:#d4af37;margin-bottom:18px}.hero h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.02;margin-bottom:18px}.hero p{font-size:1.1rem;color:#b6c2d1;max-width:560px}.buttons{display:flex;gap:14px;margin-top:28px}.ghost{padding:12px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.15)}.card3d{padding:30px;border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.03));box-shadow:0 20px 60px rgba(0,0,0,.35)}.stat{padding:18px;border-radius:20px;background:rgba(255,255,255,.04);margin-top:14px}.sec{padding:100px 0}.title{font-size:2.2rem;margin-bottom:14px}.muted{color:#9eb0c4}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:28px}.card{padding:24px;border-radius:22px;background:#0d1a2e;border:1px solid rgba(255,255,255,.06)}.num{font-size:2rem;color:#d4af37;font-weight:800}.footer{padding:40px 0;border-top:1px solid rgba(255,255,255,.08);color:#8fa2b7}.floating{position:fixed;right:20px;bottom:20px;padding:14px 18px;border-radius:999px;background:#25D366;color:#08111f;font-weight:800;z-index:20}@media(max-width:900px){.grid{grid-template-columns:1fr}.hero{padding-top:100px}}
+</style>
+</head>
+<body>
+<nav class='nav'><div class='wrap'><div class='brand'>Deepak Sanghi</div><a href='#contact' class='cta'>Free Consultation</a></div></nav>
+<section class='hero'>
+<div class='wrap grid'>
+<div>
+<div class='badge'>Trusted Mutual Fund Guidance</div>
+<h1>Build Wealth With Smart Investing</h1>
+<p>Goal-based mutual fund planning for families, professionals, and business owners. Clear advice. Disciplined growth. Long-term confidence.</p>
+<div class='buttons'><a class='cta' href='#contact'>Start Investing</a><a class='ghost' href='#services'>Explore Services</a></div>
+</div>
+<div class='card3d'>
+<h3>Portfolio Snapshot</h3>
+<div class='stat'><div class='num'>₹500+</div><div>SIPs Started</div></div>
+<div class='stat'><div class='num'>10+ Years</div><div>Guidance Experience</div></div>
+<div class='stat'><div class='num'>100%</div><div>Personalized Planning</div></div>
+</div>
+</div>
+</section>
+<section class='sec' id='services'><div class='wrap'>
+<h2 class='title'>Services</h2><p class='muted'>Simple plans built around your goals.</p>
+<div class='cards'>
+<div class='card'><h3>SIP Planning</h3><p class='muted'>Monthly investing for wealth creation.</p></div>
+<div class='card'><h3>Tax Saving ELSS</h3><p class='muted'>Save tax while building assets.</p></div>
+<div class='card'><h3>Retirement Plans</h3><p class='muted'>Income-focused future planning.</p></div>
+<div class='card'><h3>Portfolio Review</h3><p class='muted'>Optimize underperforming holdings.</p></div>
+</div></div></section>
+<section class='sec'><div class='wrap grid'>
+<div><h2 class='title'>Why Clients Choose Deepak Sanghi</h2><p class='muted'>No hype. No guesswork. Just structured investing decisions based on risk, time horizon, and life goals.</p></div>
+<div class='cards'>
+<div class='card'><div class='num'>01</div>Transparent Advice</div>
+<div class='card'><div class='num'>02</div>Regular Reviews</div>
+<div class='card'><div class='num'>03</div>Fast Support</div>
+<div class='card'><div class='num'>04</div>Long-Term Focus</div>
+</div></div></section>
+<section class='sec' id='contact'><div class='wrap card3d'>
+<h2 class='title'>Start Your Investment Journey</h2>
+<p class='muted'>Book a free consultation today.</p><br>
+<div class='buttons'><a class='cta' href='tel:+910000000000'>Call Now</a><a class='ghost' href='mailto:advisor@example.com'>Email</a></div>
+</div></section>
+<footer class='footer'><div class='wrap'>© 2026 Deepak Sanghi • Mutual fund investments are subject to market risks. Read all scheme related documents carefully.</div></footer>
+<a class='floating' href='#contact'>WhatsApp</a>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+gsap.from('.hero h1',{y:60,opacity:0,duration:1});
+gsap.from('.hero p',{y:30,opacity:0,duration:1,delay:.2});
+gsap.from('.card3d',{x:80,opacity:0,duration:1,delay:.4});
+gsap.utils.toArray('.card').forEach((el,i)=>gsap.from(el,{scrollTrigger:{trigger:el,start:'top 85%'},y:40,opacity:0,duration:.7,delay:i*.05}));
+gsap.to('.card3d',{y:-12,repeat:-1,yoyo:true,duration:2,ease:'sine.inOut'});
+</script>
+</body></html>
